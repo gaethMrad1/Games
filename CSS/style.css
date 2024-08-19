@@ -1150,6 +1150,7 @@ header .contener .drobdown ul li a:hover {
     width: fit-content;
     margin: 0 auto 50px;
     position: relative;
+    text-align: center;
 }
 .stats .contener {
     display: grid;
