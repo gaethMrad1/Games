@@ -1313,6 +1313,15 @@ footer .contener .content {
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     gap: 20px;
 }
+@media (max-width: 550px) {
+    footer .contener .content .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
 footer .contener .content .left h1 {
     color: white;
     font-weight: bold;
@@ -1353,6 +1362,12 @@ footer .contener .content > ul li {
     transition-duration: var(--main-transition);
     color: #fafafa;
 }
+@media (max-width: 550px) {
+    footer .contener .content > ul li {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
 footer .contener .content > ul li:hover {
     padding-left: 10px;
 }
@@ -1362,12 +1377,31 @@ footer .contener .content .info div {
     gap: 10px;
     margin-bottom: 20px;
 }
+@media (max-width: 550px) {
+    footer .contener .content .info div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 footer .contener .content .info div i {
     font-size: 25px;
     color: var(--main-color);
 }
+footer .contener .content .info div .text {
+    text-align: center;
+    line-height: 1.7;
+}
+footer .contener .content .image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: flex-start;
+}
 footer .contener .content .image img {
     width: 78px;
+    height: 78px;
     border: 2px solid white;
 }
 footer > p {
